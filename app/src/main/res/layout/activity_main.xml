@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbg"
+    android:paddingHorizontal="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Quots App"
+        android:fontFamily="@font/robotobold"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+   <LinearLayout
+       android:layout_weight="6"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:orientation="vertical"
+       android:paddingVertical="10dp"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:paddingHorizontal="10dp"
+       >
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          >
+
+          <RelativeLayout
+              android:id="@+id/quotesbgid"
+              android:layout_width="match_parent"
+              android:layout_height="270dp"
+              android:background="@drawable/quotes_bg"
+              android:paddingHorizontal="15dp"
+             >
+
+              <ImageView
+                  android:id="@+id/quotes_image"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentLeft="true"
+                  android:src="@drawable/ic_quots" />
+
+              <TextView
+                  android:id="@+id/quotes"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="50dp"
+                  android:fontFamily="@font/robotobold"
+                  android:text="Quots App"
+                  android:textSize="15dp" />
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/quotesbgid"
+              android:layout_marginTop="50dp"
+              >
+
+              <ImageView
+                  android:id="@+id/quotes_image2"
+                  android:layout_width="33dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentRight="true"
+                  android:src="@drawable/ic_share" />
+
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_alignParentBottom="true"
+              android:paddingHorizontal="10dp"
+              >
+
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:text="Next"
+                  android:fontFamily="@font/robotobold"
+                  android:textSize="15dp"
+                  />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:text="Previous"
+                  android:textAlignment="textEnd"
+                  android:fontFamily="@font/robotobold"
+                  android:textSize="15dp"
+                  />
+
+          </LinearLayout>
+
+
+      </RelativeLayout>
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
