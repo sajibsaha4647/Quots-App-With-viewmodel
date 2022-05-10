@@ -1,4 +1,10 @@
 package com.example.androidquotsapp
 
-class MainviewModel {
+import androidx.lifecycle.ViewModel
+
+class MainviewModel:ViewModel() {
+
+    private var quotesList: Array<Quote> = emptyArray()
+    private var index = 0
+
 }
