@@ -10,14 +10,14 @@ import androidx.lifecycle.ViewModelProvider
 class MainActivity : AppCompatActivity() {
 
     lateinit var mainviewModel:MainviewModel
-    private lateinit var quotestext: TextView  ;
+    private  val quotestext: TextView get() = findViewById(R.id.quotes)
+
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        quotestext = findViewById(R.id.quotes)
         mainviewModel = ViewModelProvider(this,MainviewModelFactory(application)).get(MainviewModel::class.java)
         setQuote(mainviewModel.getquots())
 

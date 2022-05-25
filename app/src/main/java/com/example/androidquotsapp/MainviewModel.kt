@@ -19,7 +19,7 @@ class MainviewModel(val context:Context):ViewModel() {
     private fun LoadQuotesLists():Array<QuotesData> {
 
         val InputStreem = context.assets.open("quotes.json")
-        val size:Int = InputStreem.available()
+        val size = InputStreem.available()
         val Buffer = ByteArray(size)
         InputStreem.read(Buffer)
         InputStreem.close();
