@@ -21,14 +21,18 @@ class MainActivity : AppCompatActivity() {
         mainviewModel = ViewModelProvider(this,MainviewModelFactory(application)).get(MainviewModel::class.java)
         setQuote(mainviewModel.getquots())
 
+//        println("quotessssssssssssss"+mainviewModel.getquots())
+
     }
 
     fun setQuote(quotes:QuotesData){
-        quotestext.text = quotes.Text
+        quotestext.text = quotes.text
+
     }
 
     fun onNext(view: View) {
         setQuote(mainviewModel.nextquots())
+        println("press")
     }
     fun onPrevious(view: View) {
         setQuote(mainviewModel.previousquots())
@@ -37,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     fun Onshare(view: View) {
         val intent = Intent(Intent.ACTION_SEND)
         intent.setType("text/plain")
-        intent.putExtra(Intent.EXTRA_TEXT,mainviewModel.getquots().Text)
+        intent.putExtra(Intent.EXTRA_TEXT,mainviewModel.getquots().text)
         startActivity(intent)
     }
 

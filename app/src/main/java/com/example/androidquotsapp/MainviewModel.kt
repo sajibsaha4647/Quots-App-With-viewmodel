@@ -30,7 +30,7 @@ class MainviewModel(val context:Context):ViewModel() {
     }
 
 
-    fun  getquots() = quotesList[index]
+    fun  getquots() = quotesList[++index]
     fun  nextquots() = quotesList[++index]
     fun  previousquots() = quotesList[--index]
 

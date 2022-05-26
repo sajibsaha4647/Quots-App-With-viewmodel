@@ -85,7 +85,8 @@
             android:onClick="onNext"
             android:fontFamily="@font/robotobold"
             android:text="Next"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            tools:ignore="UsingOnClickInXml" />
 
         <TextView
             android:layout_width="0dp"
@@ -95,7 +96,8 @@
             android:text="Previous"
             android:onClick="onPrevious"
             android:textAlignment="textEnd"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            tools:ignore="UsingOnClickInXml" />
 
     </LinearLayout>
 
